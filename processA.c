@@ -35,7 +35,6 @@ void main()
 
     }
 }
-
 void sigusr1()
 {
 	signal(SIGUSR1, sigusr1);
