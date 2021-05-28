@@ -6,6 +6,8 @@
 
 const char *filename = "/home/osboxes/Topicos/tarefa1/observed/teste.x";
 
+void sigusr1();
+
 void main()
 {
     int pid;
@@ -16,12 +18,12 @@ void main()
         perror("fork");
         exit(1);
     }
-  
+    
     if (pid == 0) 
     { /* child */
-    	if(access(*filename, F_OK) == 0
+    	if(access(filename, F_OK) == 0)
 	{
-		kill(pid, SIGUSR1);
+		kill(pid,SIGUSR1);
 		// file exists
 	}
 	else
@@ -30,11 +32,13 @@ void main()
 	}
         for (;;); /* loop for ever */
     }
+    
     else /* parent */
-    { 
-
+    {
+	
     }
 }
+
 void sigusr1()
 {
 	signal(SIGUSR1, sigusr1);
