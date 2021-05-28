@@ -1,3 +1,0 @@
-/home/osboxes/Topicos/tarefa1/cmake/build/CMakeFiles/rebuild_cache.dir
-/home/osboxes/Topicos/tarefa1/cmake/build/CMakeFiles/edit_cache.dir
-/home/osboxes/Topicos/tarefa1/cmake/build/CMakeFiles/app.dir
