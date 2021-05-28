@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/app.dir/tarefa1.o  -o app 
